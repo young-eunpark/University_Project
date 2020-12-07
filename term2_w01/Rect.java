@@ -9,7 +9,7 @@ public class Rect implements Shape{
 	}
 	public void draw()
 	{
-		System.out.println(width + "x" + height + "Å©±âÀÇ »ç°¢ÇüÀÔ´Ï´Ù.");
+		System.out.println(width + "x" + height + "í¬ê¸°ì˜ ì‚¬ê°í˜•ì…ë‹ˆë‹¤.");
 	}
 	public double getArea()
 	{
