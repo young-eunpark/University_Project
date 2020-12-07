@@ -8,14 +8,14 @@ class Dog implements Animal
 {
 	public void sound()
 	{
-		System.out.println("∏€∏€~~");
+		System.out.println("Î©çÎ©ç~~");
 	}
 }
 class Duck implements Animal
 {
 	public void sound()
 	{
-		System.out.println("≤–≤–~~");
+		System.out.println("ÍΩ•ÍΩ•~~");
 	}
 }
 public class AnimalDemo {
