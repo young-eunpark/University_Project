@@ -9,7 +9,7 @@ public class Oval implements Shape {
 	}
 	public void draw()
 	{
-		System.out.println(width + "x" + height + "¿¡ ³»Á¢ÇÏ´Â Å¸¿øÀÔ´Ï´Ù.");
+		System.out.println(width + "x" + height + "ì— ë‚´ì ‘í•˜ëŠ” íƒ€ì›ì…ë‹ˆë‹¤.");
 	}
 	public double getArea()
 	{
