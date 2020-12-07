@@ -6,7 +6,7 @@ public interface Shape {
 	double getArea();
 	default public void redraw()
 	{
-		System.out.print("--- ´Ù½Ã ±×¸³´Ï´Ù. ");
+		System.out.print("--- ë‹¤ì‹œ ê·¸ë¦½ë‹ˆë‹¤. ");
 		draw();
 	}
 }
