@@ -8,7 +8,7 @@ public class Circle implements Shape{
 	}
 	public void draw()
 	{
-		System.out.println("¹İÁö¸§ÀÌ " + radius + "ÀÎ ¿øÀÔ´Ï´Ù.");
+		System.out.println("ë°˜ì§€ë¦„ì´ " + radius + "ì¸ ì›ì…ë‹ˆë‹¤.");
 	}
 	public double getArea()
 	{
