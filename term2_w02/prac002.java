@@ -25,7 +25,7 @@ public class prac002 {
 	public static void main(String[] args) {
 		Double number = 3.14;
 		
-		System.out.println("3.14¸¦ 16Áø¼ö·Î Ç¥Çö : "+ number.toHexString(number));
+		System.out.println("3.14ë¥¼ 16ì§„ìˆ˜ë¡œ í‘œí˜„ : "+ number.toHexString(number));
 	}
 }*/
 
@@ -34,8 +34,8 @@ public class prac002 {
 	public static void main(String[] args) {
 		Integer number = 1234;
 		
-		System.out.println("1,234À» 2Áø¼ö·Î Ç¥Çö : " + number.toBinaryString(number));
-		System.out.println("1,234À» 8Áø¼ö·Î Ç¥Çö : " + number.toOctalString(number));
-		System.out.println("1,234À» 16Áø¼ö·Î Ç¥Çö : " + number.toHexString(number));	
+		System.out.println("1,234ì„ 2ì§„ìˆ˜ë¡œ í‘œí˜„ : " + number.toBinaryString(number));
+		System.out.println("1,234ì„ 8ì§„ìˆ˜ë¡œ í‘œí˜„ : " + number.toOctalString(number));
+		System.out.println("1,234ì„ 16ì§„ìˆ˜ë¡œ í‘œí˜„ : " + number.toHexString(number));	
 	}
 }*/
