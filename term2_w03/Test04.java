@@ -1,7 +1,6 @@
 package w03;
 
-
-/*public class Test04 {
+public class Test04 {
 	public static void main(String[] args) {
 		String s1 = "java\t";
 		String s2 = ",C++,C";
@@ -13,7 +12,7 @@ package w03;
 		s1 = s1.trim();
 		System.out.println("After Trim : "+"\""+s1+"\"");
 		
-		System.out.println("¹®ÀÚ¿­ s1¿¡ v¹®ÀÚ µé¾îÀÖ´ÂÁö ¿©ºÎ : "+s1.contains("V"));
+		System.out.println("ë¬¸ìì—´ s1ì— vë¬¸ì ë“¤ì–´ìˆëŠ”ì§€ ì—¬ë¶€ : "+s1.contains("V"));
 		
 		s1 = s1.concat(s2);
 		System.out.println(s1);
@@ -29,4 +28,4 @@ package w03;
 		System.out.println(s1);
 		System.out.println(s1.charAt(0));
 	}
-}*/
+}
