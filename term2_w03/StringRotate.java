@@ -3,7 +3,7 @@ package w03;
 import java.util.Scanner;
 public class StringRotate {
 	public static void main(String[] args) {
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		Scanner scanner = new Scanner(System.in);
 		String text = scanner.nextLine();
 	
