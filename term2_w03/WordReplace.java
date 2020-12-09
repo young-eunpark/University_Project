@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class WordReplace {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String text = "¿ì¸®´Â oo´ëÇĞ±³¸¦ »ç¶ûÇÕ´Ï´Ù.";
-		System.out.println("¹®ÀÚ¿­ : "+ text);
+		String text = "ìš°ë¦¬ëŠ” ooëŒ€í•™êµë¥¼ ì‚¬ë‘í•©ë‹ˆë‹¤.";
+		System.out.println("ë¬¸ìì—´ : "+ text);
 		StringBuffer sb = new StringBuffer(text);
 		
 		String[] arr = text.split(" ");
-		arr[1]=arr[1].replace("oo´ëÇĞ±³¸¦","oo´ëÇĞ±³");
+		arr[1]=arr[1].replace("ooëŒ€í•™êµë¥¼","ooëŒ€í•™êµ");
 		boolean a=true;
 		
 		while(a) {
-			System.out.print("ÀÔ·Â  : ");
+			System.out.print("ì…ë ¥  : ");
 			String input = scanner.nextLine();
 			String[] s = input.split(":");
 			
@@ -36,11 +36,11 @@ public class WordReplace {
 			}
 			if(input.equals("stop"))
 			{
-				System.out.println("Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				a=false;
 			}
 			else
-				System.out.println("Ã£À» ¼ö ¾ø½À´Ï´Ù!");
+				System.out.println("ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 		}
 		
 		scanner.close();
