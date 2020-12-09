@@ -2,7 +2,7 @@ package w03;
 
 public class p03 {
 	public static void main(String[] args) {
-		String furniture = "³ÃÀå°í,¼¼Å¹±â,¿¡¾îÄÁ,TV,¿Àµğ¿À,ÄÄÇ»ÅÍ";
+		String furniture = "ëƒ‰ì¥ê³ ,ì„¸íƒê¸°,ì—ì–´ì»¨,TV,ì˜¤ë””ì˜¤,ì»´í“¨í„°";
 		String[] f = furniture.split(",");
 
 		for(int i=0;i<6;i++)
