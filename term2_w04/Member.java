@@ -7,10 +7,10 @@ public class Member {
 		String id,passwd;
 		try {
 			Scanner sc = new Scanner(System.in);
-			System.out.print("Id ÀÔ·Â : ");
+			System.out.print("Id ì…ë ¥ : ");
 			id=sc.next();
 			checkID(id);
-			System.out.print("PassWord ÀÔ·Â : ");
+			System.out.print("PassWord ì…ë ¥ : ");
 			passwd=sc.next();
 			checkPasswd(passwd);
 			
@@ -19,11 +19,11 @@ public class Member {
 		}
 		catch(NotExistIDException e)
 		{
-			System.out.println("ID°¡ ¾øÀ½");
+			System.out.println("IDê°€ ì—†ìŒ");
 		}
 		catch(WrongPasswordException e)
 		{
-			System.out.println("Password°¡ Àß¸øµÊ");
+			System.out.println("Passwordê°€ ì˜ëª»ë¨");
 		}
 	}
 	public static String checkID(String id) throws NotExistIDException
