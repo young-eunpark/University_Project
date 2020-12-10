@@ -19,11 +19,11 @@ public class ExceptionTest {
 		}
 		catch(NumberFormatException|ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println("½ÇÇà¸Å°³º¯¼ö°¡ ºÎÁ·ÇÏ°Å³ª ¼ıÀÚ·Î º¯È¯ÀÌ ¾ÈµÊ");
+			System.out.println("ì‹¤í–‰ë§¤ê°œë³€ìˆ˜ê°€ ë¶€ì¡±í•˜ê±°ë‚˜ ìˆ«ìë¡œ ë³€í™˜ì´ ì•ˆë¨");
 		}
 		catch(Exception e)
 		{
-			System.out.println("È®ÀÎ¾ÈµÈ ¿À·ù.");
+			System.out.println("í™•ì¸ì•ˆëœ ì˜¤ë¥˜.");
 		}
 	}
 }
