@@ -8,18 +8,18 @@ public class GradeAverage {
 		Scanner sc = new Scanner(System.in);
 		try 
 		{
-			System.out.print("Á¤¼öÀÇ °³¼ö : ");
+			System.out.print("ì •ìˆ˜ì˜ ê°œìˆ˜ : ");
 			num = sc.nextInt();
 		
 			for(int i=0;i<num;i++)
 			{
-				System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+				System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 				grade = sc.nextInt();
 				checkNegative(grade);
 				sum+=grade;
 			}
 			avg=sum/num;
-			System.out.println("Æò±ÕÀº "+avg);
+			System.out.println("í‰ê· ì€ "+avg);
 		}
 		catch(NegativeNumberException e)
 		{
@@ -27,14 +27,14 @@ public class GradeAverage {
 		}
 		catch(Exception e)
 		{
-			System.out.println(e+" »ê¼ú ¿À·ù");
+			System.out.println(e+" ì‚°ìˆ  ì˜¤ë¥˜");
 		}
 	}
 	public static int checkNegative(int grade) throws NegativeNumberException
 	{
 		if(grade<0)
 		{
-			throw new NegativeNumberException("À½¼ö ÀÔ·Â ¿À·ù");
+			throw new NegativeNumberException("ìŒìˆ˜ ì…ë ¥ ì˜¤ë¥˜");
 		}
 		else
 			return grade;
