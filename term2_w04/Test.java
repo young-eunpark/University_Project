@@ -9,7 +9,7 @@ public class Test {
 		}
 		catch(Exception e)
 		{
-			System.out.println("¿¹¿Ü°¡ ¹ß»ıÇß½À´Ï´Ù.\n"+e);
+			System.out.println("ì˜ˆì™¸ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.\n"+e);
 		}
 	}
 	public static void sub()
