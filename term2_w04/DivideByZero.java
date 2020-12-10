@@ -7,9 +7,9 @@ public class DivideByZero {
 		int number1, number2, result;
 		Scanner sc = new Scanner(System.in);
 		try {
-			System.out.print("Ã¹¹øÂ° Á¤¼ö : ");
+			System.out.print("ì²«ë²ˆì§¸ ì •ìˆ˜ : ");
 			number1 = sc.nextInt();
-			System.out.print("µÎ¹øÂ° Á¤¼ö : ");
+			System.out.print("ë‘ë²ˆì§¸ ì •ìˆ˜ : ");
 			number2 = sc.nextInt();
 		
 			result = quotient(number1,number2);
@@ -38,9 +38,9 @@ class DivideByZeroException extends Exception
 		Scanner sc = new Scanner(System.in);
 		try
 		{
-			System.out.print("Ã¹¹øÂ° Á¤¼ö : ");
+			System.out.print("ì²«ë²ˆì§¸ ì •ìˆ˜ : ");
 			number1 = sc.nextInt();
-			System.out.print("µÎ¹øÂ° Á¤¼ö : ");
+			System.out.print("ë‘ë²ˆì§¸ ì •ìˆ˜ : ");
 			number2 = sc.nextInt();
 			
 			result = number1/number2;
@@ -48,7 +48,7 @@ class DivideByZeroException extends Exception
 		}
 		catch(Exception e)
 		{
-			System.out.println("¿¹¿Ü°¡ ¹ß»ıÇß½À´Ï´Ù.\n"+e);
+			System.out.println("ì˜ˆì™¸ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.\n"+e);
 		}
 	}
 }*/
