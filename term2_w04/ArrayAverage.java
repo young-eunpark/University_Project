@@ -10,19 +10,19 @@ public class ArrayAverage {
 		}
 		catch(ArithmeticException e)
 		{
-			System.out.println("»ê¼ú Á¶°Ç ¿¹¿Ü¹ß»ı\n"+e);
+			System.out.println("ì‚°ìˆ  ì¡°ê±´ ì˜ˆì™¸ë°œìƒ\n"+e);
 		}
 		catch(NegativeArraySizeException e)
 		{
-			System.out.println("¹è¿­ Å©±â ¿¹¿Ü¹ß»ı\n"+e);
+			System.out.println("ë°°ì—´ í¬ê¸° ì˜ˆì™¸ë°œìƒ\n"+e);
 		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println("ÀÎµ¦½º °ª ¿¹¿Ü¹ß»ı\n"+e);
+			System.out.println("ì¸ë±ìŠ¤ ê°’ ì˜ˆì™¸ë°œìƒ\n"+e);
 		}
 		catch(NullPointerException e)
 		{
-			System.out.println("null ÃÊ±âÈ­ ¿¹¿Ü¹ß»ı\n"+e);
+			System.out.println("null ì´ˆê¸°í™” ì˜ˆì™¸ë°œìƒ\n"+e);
 		}
 	}
 	public static void getAverage()
@@ -34,12 +34,12 @@ public class ArrayAverage {
 		
 		for(int i=0;i<array.length;i++)
 		{
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			array[i]=sc.nextInt();
 			sum+=array[i];
 		}
 		System.out.println(sum);
 		avg=sum/10;
-		System.out.println("Æò±Õ : "+avg);
+		System.out.println("í‰ê·  : "+avg);
 	}
 }
