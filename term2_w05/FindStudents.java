@@ -25,7 +25,7 @@ public class FindStudents {
 		catch(IOException e)
 		{
 			System.out.println(" ");
-			System.out.println("ÃÑ : "+cnt+" ¸í");
+			System.out.println("ì´ : "+cnt+" Â¸ëª…");
 		}
 
 
