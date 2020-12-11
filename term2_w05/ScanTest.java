@@ -5,10 +5,10 @@ public class ScanTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "ÀÌ¼ø½Å : lee@korea.net\r\n" + 
-				"È«±æµ¿ : hong@korea.net\r\n" + 
-				"±èÀ¯½Å : kim@korea.net\r\n" + 
-				"¼¼Á¾½Ã : king@korea.net";
+		String str = "ì´ìˆœì‹  : lee@korea.net\r\n" + 
+				"í™ê¸¸ë™ : hong@korea.net\r\n" + 
+				"ê¹€ìœ ì‹  : kim@korea.net\r\n" + 
+				"ì„¸ì¢…ì‹œ : king@korea.net";
 		try
 		{
 			FileWriter fw = new FileWriter("input.dat");
