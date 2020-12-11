@@ -36,7 +36,7 @@ public class StudentTest {
 					oos.writeObject(stu);
 				}
 			}
-			System.out.println("ÇĞ»ı °´Ã¼´Â ÃÑ "+cnt+"°³ »ı¼ºµÊ.");
+			System.out.println("í•™ìƒ ê°œì²´ëŠ” ì´ "+cnt+"ê°œ ìƒì„¬ë¨.");
 			fr.close();
 			oos.close();
 		}
