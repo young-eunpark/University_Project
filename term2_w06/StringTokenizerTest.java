@@ -8,7 +8,7 @@ public class StringTokenizerTest {
 		String[] string = new String[100];
 		int count=0;
 		
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String str=scan.nextLine();
 		
 		StringTokenizer str1= new StringTokenizer(str);
@@ -18,13 +18,13 @@ public class StringTokenizerTest {
 			string[count++] = s;
 			System.out.println(s);
 		}
-		System.out.println("¸ğµÎ "+count+"°³ÀÇ ´Ü¾î°¡ ÀÖ½À´Ï´Ù.");
+		System.out.println("ëª¨ë‘ "+count+"ê°œì˜ ë‹¨ì–´ê°€ ìˆìŠµë‹ˆë‹¤.");
 		
 		String[] value=new String[count];
 		System.arraycopy(string,0,value,0,count);
 		Arrays.sort(value);
 		
-		System.out.println("======= Á¤·Ä ÈÄ µ¥ÀÌÅÍ =======");
+		System.out.println("======= ì •ë ¬ í›„ ë°ì´í„° =======");
 		System.out.print("[");
 		for(int k=0; k<value.length;k++)
 		{
@@ -41,7 +41,7 @@ public class StringTokenizerTest {
 		Scanner scan = new Scanner(System.in);
 		int count=0;
 		
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String str=scan.nextLine();
 		
 		StringTokenizer str1= new StringTokenizer(str);
@@ -50,6 +50,6 @@ public class StringTokenizerTest {
 			System.out.println(str1.nextToken());
 			count++;
 		}
-		System.out.println("¸ğµÎ "+count+"°³ÀÇ ´Ü¾î°¡ ÀÖ½À´Ï´Ù.");
+		System.out.println("ëª¨ë‘ "+count+"ê°œì˜ ë‹¨ì–´ê°€ ìˆìŠµë‹ˆë‹¤.");
 	}
 }*/
