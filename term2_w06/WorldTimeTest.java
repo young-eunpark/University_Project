@@ -7,64 +7,64 @@ public class WorldTimeTest {
 		TimeZone tz;
 		Date time = new Date();
 		
-		SimpleDateFormat format1 = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ aa HH½Ã mmºĞ ssÃÊ");
+		SimpleDateFormat format1 = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ aa HHì‹œ mmë¶„ ssì´ˆ");
 		tz=TimeZone.getTimeZone("Asia/Seoul");
 		format1.setTimeZone(tz);	
 		String Seoul=format1.format(time);
-		System.out.println("¼­¿ï Ç¥ÁØ½Ã\n"+Seoul+"\n");
+		System.out.println("ì„œìš¸ í‘œì¤€ì‹œ\n"+Seoul+"\n");
 		
-		SimpleDateFormat format2 = new SimpleDateFormat("yy³â MM¿ù ddÀÏ aa HH½Ã mmºĞ ssÃÊ");
+		SimpleDateFormat format2 = new SimpleDateFormat("yyë…„ MMì›” ddì¼ aa HHì‹œ mmë¶„ ssì´ˆ");
 		tz=TimeZone.getTimeZone("CET");
 		format2.setTimeZone(tz);	
 		String MEurope=format2.format(time);
-		System.out.println("ÁßºÎ À¯·´ Ç¥ÁØ½Ã\n"+MEurope+"\n");
+		System.out.println("ì¤‘ë¶€ ìœ ëŸ½ í‘œì¤€ì‹œ\n"+MEurope+"\n");
 		
 		SimpleDateFormat format3 = new SimpleDateFormat("dd-MM-yyyy aa HH:mm:ss");
 		tz=TimeZone.getTimeZone("EST");
 		format3.setTimeZone(tz);	
 		String EAmerica=format3.format(time);
-		System.out.println("¹Ì µ¿ºÎ Ç¥ÁØ½Ã\n"+EAmerica+"\n");
+		System.out.println("ë¯¸ ë™ë¶€ í‘œì¤€ì‹œ\n"+EAmerica+"\n");
 		
 		SimpleDateFormat format4 = new SimpleDateFormat("MM-dd-yyyy aa HH:mm:ss");
 		tz=TimeZone.getTimeZone("EST");
 		format4.setTimeZone(tz);	
 		String PAmerica=format4.format(time);
-		System.out.println("¹Ì ÅÂÆò¾ç Ç¥ÁØ½Ã\n"+PAmerica+"\n");
+		System.out.println("ë¯¸ íƒœí‰ì–‘ í‘œì¤€ì‹œ\n"+PAmerica+"\n");
 		
 		SimpleDateFormat format5 = new SimpleDateFormat("yy-MM-dd EEEE aa HH:mm:ss");
 		tz=TimeZone.getTimeZone("BRT");
 		format5.setTimeZone(tz);	
 		String Brasilia=format5.format(time);
-		System.out.println("ºê¶óÁú¸®¾Æ Ç¥ÁØ½Ã\n"+Brasilia+"\n");
+		System.out.println("ë¸Œë¼ì§ˆë¦¬ì•„ í‘œì¤€ì‹œ\n"+Brasilia+"\n");
 		
 		SimpleDateFormat format6 = new SimpleDateFormat("yyyy-MM-dd aa HH:mm:ss");
 		tz=TimeZone.getTimeZone("Asia/Moscow");
 		format6.setTimeZone(tz);	
 		String Moscow=format6.format(time);
-		System.out.println("¸ğ½ºÅ©¹Ù Ç¥ÁØ½Ã\n"+Moscow+"\n");
+		System.out.println("ëª¨ìŠ¤í¬ë°” í‘œì¤€ì‹œ\n"+Moscow+"\n");
 		
 		SimpleDateFormat format7 = new SimpleDateFormat("yyyy/MM/dd aa HH:mm:ss");
 		tz=TimeZone.getTimeZone("Africa/Cairo");
 		format7.setTimeZone(tz);	
 		String Arab=format7.format(time);
-		System.out.println("¾Æ¶óºñ¾Æ Ç¥ÁØ½Ã\n"+Arab+"\n");
+		System.out.println("ì•„ë¼ë¹„ì•„ í‘œì¤€ì‹œ\n"+Arab+"\n");
 		
 		SimpleDateFormat format8 = new SimpleDateFormat("G yyyy-MM-dd EEEE HH:mm:ss aa");
 		tz=TimeZone.getTimeZone("SAST");
 		format8.setTimeZone(tz);	
 		String SAfrica=format8.format(time);
-		System.out.println("³²¾ÆÇÁ¸®Ä« Ç¥ÁØ½Ã\n"+SAfrica+"\n");
+		System.out.println("ë‚¨ì•„í”„ë¦¬ì¹´ í‘œì¤€ì‹œ\n"+SAfrica+"\n");
 		
 		SimpleDateFormat format9 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss aa");
 		tz=TimeZone.getTimeZone("AEST");
 		format9.setTimeZone(tz);	
 		String Aus=format9.format(time);
-		System.out.println("¿À½ºÆ®·¹ÀÏ¸®¾Æ µ¿ºÎ Ç¥ÁØ½Ã\n"+Aus+"\n");
+		System.out.println("ì˜¤ìŠ¤íŠ¸ë ˆì¼ë¦¬ì•„ ë™ë¶€ í‘œì¤€ì‹œ\n"+Aus+"\n");
 		
-		SimpleDateFormat format10 = new SimpleDateFormat("yy/MM¿ù/dd HH:mm:ss aa");
+		SimpleDateFormat format10 = new SimpleDateFormat("yy/MMì›”/dd HH:mm:ss aa");
 		tz=TimeZone.getTimeZone("CST");
 		format10.setTimeZone(tz);	
 		String China=format10.format(time);
-		System.out.println("Áß±¹ Ç¥ÁØ½Ã\n"+China+"\n");
+		System.out.println("ì¤‘êµ­ í‘œì¤€ì‹œ\n"+China+"\n");
 	}
 }
