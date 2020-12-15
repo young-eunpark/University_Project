@@ -10,7 +10,7 @@ public class LottoNum2 {
 		
 		do
 		{
-			System.out.println("±¸ÀÔ°¹¼ö?");
+			System.out.println("êµ¬ìž…ê°¯ìˆ˜?");
 			int n=scan.nextInt();
 			
 			for(int i=0;i<n;i++)
@@ -26,12 +26,12 @@ public class LottoNum2 {
 				}
 				System.out.println("Lotto "+(i+1)+"="+set);
 			}
-			System.out.println("´Ù¸¥ ¹øÈ£¸¦ ¿øÇÏ½Ê´Ï±î?");
+			System.out.println("ë‹¤ë¥¸ ë²ˆí˜¸ë¥¼ ì›í•˜ì‹­ë‹ˆê¹Œ?");
 			String s=scan.next();
 			if(s.equals("y")||s.equals("Y"))
 				continue;
 			else {
-				System.out.println("°¨»çÇÕ´Ï´Ù!!");
+				System.out.println("ê°ì‚¬í•©ë‹ˆë‹¤!!");
 				break;
 			}
 				
