@@ -21,23 +21,23 @@ public class LinedListTest {
 		difference.removeAll(even);
 		intersection.retainAll(even);
 		
-		System.out.println("È¦¼ö : "+low);
-		System.out.println("Â¦¼ö : "+even);
+		System.out.println("í™€ìˆ˜ : "+low);
+		System.out.println("ì§ìˆ˜ : "+even);
 		System.out.println();
-		System.out.println("ÇÕ : "+total);
-		System.out.println("°øÅë : "+intersection);
-		System.out.println("Â÷ : "+difference);
+		System.out.println("í•© : "+total);
+		System.out.println("ê³µí†µ : "+intersection);
+		System.out.println("ì°¨ : "+difference);
 		System.out.println();
 		
-		System.out.println("°øÅë¿¡¼­ °¡Àå ÀÛÀº °ªÀº : "+Collections.min(intersection));
-		System.out.println("Â÷¿¡¼­ °¡Àå Å« °ªÀº : "+Collections.max(difference));
+		System.out.println("ê³µí†µì—ì„œ ê°€ì¥ ì‘ì€ ê°’ì€ : "+Collections.min(intersection));
+		System.out.println("ì°¨ì—ì„œ ê°€ì¥ í° ê°’ì€ : "+Collections.max(difference));
 		Iterator<Integer>it=intersection.iterator();
 		int sum=0;
 		while(it.hasNext())
 		{
 			sum+=it.next();
 		}
-		System.out.println("°øÅëÀÇ ÇÕÀº : "+sum);
+		System.out.println("ê³µí†µì˜ í•©ì€ : "+sum);
 		
 		it=difference.iterator();
 		sum=0;
@@ -45,7 +45,7 @@ public class LinedListTest {
 		{
 			sum+=it.next();
 		}
-		System.out.println("Â÷ÀÇ ÇÕÀº : "+sum);
+		System.out.println("ì°¨ì˜ í•©ì€ : "+sum);
 	}
 
 }
