@@ -20,7 +20,7 @@ public class LottoNum {
 			}while(set2.contains(d));
 			set2.add(d);
 		}
-		System.out.println("Lotto¹øÈ£(Hashset) ="+set1);
-		System.out.println("Lotto¹øÈ£(Treeset) ="+set2);
+		System.out.println("Lotto번호(Hashset) ="+set1);
+		System.out.println("Lotto(Treeset) ="+set2);
 	}
 }
