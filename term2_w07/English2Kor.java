@@ -22,16 +22,16 @@ public class English2Kor {
 		Scanner sc=new Scanner(System.in);
 		do
 		{
-			System.out.print("ÇÑ±Û ? ");
+			System.out.print("í•œê¸€ ? ");
 			String key=sc.next();
-			if(key.equals("±×¸¸")) {
-				System.out.println("Á¾·á!");
+			if(key.equals("ê·¸ë§Œ")) {
+				System.out.println("ì¢…ë£Œ!");
 				break;
 			}
 			if(dic.get(key)!=null)
-				System.out.println("¿µ¾î : "+dic.get(key));	
+				System.out.println("ì˜ì–´ : "+dic.get(key));	
 			else
-				System.out.println("¾ø´Â ´Ü¾î!");
+				System.out.println("ì—†ëŠ” ë‹¨ì–´!");
 		}while(true);
 	}
 }
