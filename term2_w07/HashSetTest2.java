@@ -23,16 +23,16 @@ public class HashSetTest2 {
 		difference.removeAll(even);
 		intersection.addAll(difference);
 		
-		System.out.println("ÁıÇÕ1 : "+low);
-		System.out.println("ÁıÇÕ2 : "+even);
+		System.out.println("ì§‘í•©1 : "+low);
+		System.out.println("ì§‘í•©2 : "+even);
 		System.out.println();
-		System.out.println("ÇÕÁıÇÕ : "+total);
-		System.out.println("Â÷ÁıÇÕ : "+difference);
-		System.out.println("°øÅëÁıÇÕ : "+intersection);
+		System.out.println("í•©ì§‘í•© : "+total);
+		System.out.println("ì°¨ì§‘í•© : "+difference);
+		System.out.println("ê³µí†µì§‘í•© : "+intersection);
 		System.out.println();
 		
-		System.out.println("°øÅëÁıÇÕ¿¡¼­ °¡Àå ÀÛÀº °ªÀº : "+Collections.min(intersection));
-		System.out.println("Â÷ÁıÇÕ¿¡¼­ °¡Àå Å« °ªÀº : "+Collections.max(difference));
+		System.out.println("ê³µí†µì§‘í•©ì—ì„œ ê°€ì¥ ì‘ì€ ê°’ì€ : "+Collections.min(intersection));
+		System.out.println("ì°¨ì§‘í•©ì—ì„œ ê°€ì¥ í° ê°’ì€ : "+Collections.max(difference));
 		System.out.println();
 		
 		Iterator<Integer>it=intersection.iterator();
@@ -41,7 +41,7 @@ public class HashSetTest2 {
 		{
 			sum+=it.next();
 		}
-		System.out.println("°øÅëÁıÇÕÀÇ ÇÕÀº : "+sum);
+		System.out.println("ê³µí†µì§‘í•©ì˜ í•©ì€ : "+sum);
 		
 		it=difference.iterator();
 		sum=0;
@@ -49,7 +49,7 @@ public class HashSetTest2 {
 		{
 			sum+=it.next();
 		}
-		System.out.println("Â÷ÁıÇÕÀÇ ÇÕÀº : "+sum);
+		System.out.println("ì°¨ì§‘í•©ì˜ í•©ì€ : "+sum);
 
 	}
 
