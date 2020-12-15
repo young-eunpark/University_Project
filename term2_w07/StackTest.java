@@ -7,18 +7,18 @@ public class StackTest {
 			for(int i = 0; i <args.length; i++) 
 			{
 				stack.push(new Integer(args[i]));
-				System.out.println("½ºÅÃ¿¡ push : "+ args[i]);
+				System.out.println("ìŠ¤íƒì— push : "+ args[i]);
 			}
 			System.out.println("=============================");
 			int n = stack.search(5);
 			if (n != -1)
-				System.out.println("½ºÅÃ¿¡¼­ ¼ýÀÚ '5'ÀÇ À§Ä¡´Â : "+n+"¹øÂ° ÀÔ´Ï´Ù");
+				System.out.println("ìŠ¤íƒì—ì„œ ìˆ«ìž '5'ì˜ ìœ„ì¹˜ëŠ” : "+n+"ë²ˆì§¸ ìž…ë‹ˆë‹¤");
 			else
-				System.out.println("½ºÅÃ¿¡¼­ ¼ýÀÚ '5'°¡ ¾ø½À´Ï´Ù");
+				System.out.println("ìŠ¤íƒì—ì„œ ìˆ«ìž '5'ê°€ ì—†ìŠµë‹ˆë‹¤");
 			System.out.println("=============================");
 			while(!stack.empty()) {
 				int m = stack.pop();
-				System.out.println("½ºÅÃ¿¡¼­ pop : " + m);
+				System.out.println("ìŠ¤íƒì—ì„œ pop : " + m);
 			}
 		}
 }
