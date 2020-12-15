@@ -32,15 +32,15 @@ public class RandomTest {
 //		HashSet<Integer>union=new HashSet<Integer>(low);
 		
 		union.addAll(even);
-		//System.out.println("LinkedHashSetÀ» ÀÌ¿ëÇÑ ÇÕÁıÇÕ");
-		//System.out.println("TreeSetÀ» ÀÌ¿ëÇÑ ÇÕÁıÇÕ");
-		System.out.println("HashSetÀ» ÀÌ¿ëÇÑ ÇÕÁıÇÕ");
+		//System.out.println("LinkedHashSetì„ ì´ìš©í•œ í•©ì§‘í•©");
+		//System.out.println("TreeSetì„ ì´ìš©í•œ í•©ì§‘í•©");
+		System.out.println("HashSetì„ ì´ìš©í•œ í•©ì§‘í•©");
 		System.out.println();
 		
-		System.out.print("low ÁıÇÕ : "+low+",");
-		System.out.println("even ÁıÇÕ : "+even);
+		System.out.print("low ì§‘í•© : "+low+",");
+		System.out.println("even ì§‘í•© : "+even);
 		System.out.println();
-		System.out.println("union ÇÕÁıÇÕ : "+union);
+		System.out.println("union í•©ì§‘í•© : "+union);
 	}
 
 }
