@@ -11,8 +11,8 @@ public class HashSetTest1 {
 			low.add(i);
 			even.add(i*2);
 		}
-		System.out.println("low ÁıÇÕ : "+low);
-		System.out.println("even ÁıÇÕ : "+even);
+		System.out.println("low ì§‘í•© : "+low);
+		System.out.println("even ì§‘í•© : "+even);
 		HashSet<Integer> union=new HashSet<Integer>(low);
 		HashSet<Integer> difference=new HashSet<Integer>(low);
 		HashSet<Integer> intersection=new HashSet<Integer>(low);
@@ -21,8 +21,8 @@ public class HashSetTest1 {
 		difference.removeAll(even);
 		intersection.retainAll(even);
 		
-		System.out.println("ÇÕÁıÇÕ : "+union);
-		System.out.println("Â÷ÁıÇÕ : "+difference);
-		System.out.println("±³ÁıÇÕ : "+intersection);
+		System.out.println("í•©ì§‘í•© : "+union);
+		System.out.println("ì°¨ì§‘í•© : "+difference);
+		System.out.println("êµì§‘í•© : "+intersection);
 	}
 }
