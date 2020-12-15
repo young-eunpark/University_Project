@@ -7,16 +7,16 @@ import java.io.IOException;
 public class Dictionary {
 
 	public static void main(String[] args) {
-		String str = "report °úÁ¦\r\n" + 
-				"lab ½ÇÇè½Ç\r\n" + 
-				"word ´Ü¾î\r\n" + 
-				"mean ÀÇ¹Ì\r\n" +
-				"map Áöµµ\r\n" +
-				"school ÇĞ±³\r\n" +
-				"various ¿©·¯°¡Áö\r\n" +
-				"implement ±¸Çö\r\n" +
-				"like ÁÁ¾ÆÇÏ´Ù\r\n" +
-				"equal °°´Ù";
+		String str = "report ê³¼ì œ\r\n" + 
+				"lab ì‹¤í—˜ì‹¤\r\n" + 
+				"word ë‹¨ì–´\r\n" + 
+				"mean ì˜ë¯¸\r\n" +
+				"map ì§€ë„\r\n" +
+				"school í•™êµ\r\n" +
+				"various ì—¬ëŸ¬ê°€ì§€\r\n" +
+				"implement êµ¬í˜„\r\n" +
+				"like ì¢‹ì•„í•˜ë‹¤\r\n" +
+				"equal ê°™ë‹¤";
 		try
 		{
 			FileWriter fw = new FileWriter("dic.dat");
