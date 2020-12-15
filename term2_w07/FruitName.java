@@ -7,19 +7,19 @@ public class FruitName {
 		String[] fruit= {"orange","banana","apple","plum","pear"};
 		LinkedList<String>name=new LinkedList<String>(Arrays.asList(fruit));
 		
-		System.out.println("==== for¹®À» ÀÌ¿ëÇÑ ¿ø¼Ò Ãâ·Â ====");
+		System.out.println("==== forë¬¸ì„ ì´ìš©í•œ ì›ì†Œ ì¶œë ¥ ====");
 		for(int i=0;i<fruit.length;i++)
 		{
 			System.out.println(fruit[i]);
 		}
 		
-		System.out.println("==== for each¹®À» ÀÌ¿ëÇÑ ¿ø¼Ò Ãâ·Â ====");
+		System.out.println("==== for eachë¬¸ì„ ì´ìš©í•œ ì›ì†Œ ì¶œë ¥ ====");
 		for(String F:fruit)
 		{
 			System.out.println(F);
 		}
 		
-		System.out.println("==== Iterator¹®À» ÀÌ¿ëÇÑ ¿ø¼Ò Ãâ·Â ====");
+		System.out.println("==== Iteratorë¬¸ì„ ì´ìš©í•œ ì›ì†Œ ì¶œë ¥ ====");
 		Iterator it=name.iterator();
 		while(it.hasNext())
 		{
