@@ -38,11 +38,11 @@ public class ThreadSum {
 			s2.join();
 			s3.join();
 		}catch(Exception e) {}
-//		System.out.println("1-300000ÀÇ ÇÕ =      "+s1.re());
-//		System.out.println("300001-600001ÀÇ ÇÕ = "+s2.re());		
-//		System.out.println("600001-900000ÀÇ ÇÕ = "+s3.re());
-		System.out.println("thread ÇÕ°è = "+(s1.total+s2.total+s3.total));
-		System.out.println("½ÇÇà½Ã°£ (½º·¹µå ÀÌ¿ë) = "+(start+end));		
+//		System.out.println("1-300000ì˜ í•© =      "+s1.re());
+//		System.out.println("300001-600001ì˜ í•© = "+s2.re());		
+//		System.out.println("600001-900000ì˜ í•© = "+s3.re());
+		System.out.println("thread í•©ê³„ = "+(s1.total+s2.total+s3.total));
+		System.out.println("ì‹¤í–‰ì‹œê°„ (ìŠ¤ë ˆë“œ ì´ìš©) = "+(start+end));		
 		
 		long sum1=0;
 		long start1=System.nanoTime();
@@ -51,9 +51,9 @@ public class ThreadSum {
 		long end1=System.nanoTime();
 		long totalTime1=end1-start1;
 		
-		System.out.println("\nÀüÃ¼°è»ê ÇÕ°è = "+sum1);
-		System.out.println("½ÇÇà½Ã°£ (ÀüÃ¼) = "+(start+end));		
+		System.out.println("\nì „ì²´ê³„ì‚° í•©ê³„ = "+sum1);
+		System.out.println("ì‹¤í–‰ì‹œê°„ (ì „ì²´) = "+(start+end));		
 		
-		System.out.println("\n½ÇÇà½Ã°£ Â÷ÀÌ = "+(totalTime-totalTime1));
+		System.out.println("\nì‹¤í–‰ì‹œê°„ ì°¨ì´ = "+(totalTime-totalTime1));
 	}
 }
