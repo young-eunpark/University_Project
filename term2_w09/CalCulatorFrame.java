@@ -5,7 +5,7 @@ import java.awt.*;
 class NorthPanel extends JPanel {
 	public NorthPanel() {
 		setBackground(Color.LIGHT_GRAY);
-		JLabel jl = new JLabel("¼ö½ÄÀÔ·Â");
+		JLabel jl = new JLabel("ìˆ˜ì‹ì…ë ¥");
 		add(jl);
 		add(new JTextField(10));
 	}
@@ -17,7 +17,7 @@ class CenterPanel extends JPanel {
 		JButton b = new JButton(Integer.toString(i));
 		add(b);
 		}
-		JButton b1=new JButton("CE"); JButton b2=new JButton("°è»ê");
+		JButton b1=new JButton("CE"); JButton b2=new JButton("ê³„ì‚°");
 		add(b1); add(b2);
 		JButton o1=new JButton("+"); JButton o2=new JButton("-");
 		JButton o3=new JButton("x"); JButton o4=new JButton("/");
@@ -29,7 +29,7 @@ class CenterPanel extends JPanel {
 class SouthPanel extends JPanel {
 	public SouthPanel() {
 		setBackground(Color.YELLOW);
-		JLabel j2 = new JLabel("°è»ê °á°ú");
+		JLabel j2 = new JLabel("ê³„ì‚° ê²°ê³¼");
 		add(j2);
 		add(new JTextField(10));
 	}		
@@ -37,7 +37,7 @@ class SouthPanel extends JPanel {
 public class CalCulatorFrame extends JFrame{
 	public CalCulatorFrame()
 	{
-		setTitle("°è»ê±â ÇÁ·¹ÀÓ");
+		setTitle("ê³„ì‚°ê¸° í”„ë ˆì„");
 		add(new SouthPanel(),BorderLayout.SOUTH);
 		add(new CenterPanel(),BorderLayout.CENTER);
 		add(new NorthPanel(),BorderLayout.NORTH);
