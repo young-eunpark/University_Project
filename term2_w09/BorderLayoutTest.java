@@ -10,11 +10,11 @@ class LayoutTest extends JFrame
 		Container c=getContentPane();
 		BorderLayout b=new BorderLayout(7,5);
 		c.setLayout(b);
-		c.add(new JButton("¿À¸¥ÂÊ"),BorderLayout.EAST);
-		c.add(new JButton("¿Ş ÂÊ"),BorderLayout.WEST);
-		c.add(new JButton("ºÏ ÂÊ"),BorderLayout.NORTH);
-		c.add(new JButton("³² ÂÊ"),BorderLayout.SOUTH);
-		c.add(new JButton("Áß ¾Ó"),BorderLayout.CENTER);
+		c.add(new JButton("ì˜¤ë¥¸ìª½"),BorderLayout.EAST);
+		c.add(new JButton("ì™¼ ìª½"),BorderLayout.WEST);
+		c.add(new JButton("ë¶ ìª½"),BorderLayout.NORTH);
+		c.add(new JButton("ë‚¨ ìª½"),BorderLayout.SOUTH);
+		c.add(new JButton("ì¤‘ ì•™"),BorderLayout.CENTER);
 		
 		setName("BorderLayout Pratice");
 		setSize(400,200);
