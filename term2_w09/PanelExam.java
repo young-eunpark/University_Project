@@ -27,7 +27,7 @@ class CenterPanel extends JPanel
 public class PanelExam extends JFrame{
 	public PanelExam()
 	{
-		super("ÀÀ¿ë¹®Á¦1");
+		super("Ã€Ã€Â¿Ã«Â¹Â®ÃÂ¦1");
 		add(new NorthPanel(),BorderLayout.NORTH);
 		add(new CenterPanel(),BorderLayout.CENTER);
 		setSize(300,200);
