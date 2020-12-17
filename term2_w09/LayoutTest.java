@@ -11,7 +11,7 @@ import java.awt.*;
 		
 		c.setLayout(null);
 		for(int i=1;i<=10;i++)
-			c.add(new JButton("¹öÆ°"));
+			c.add(new JButton("ë²„íŠ¼"));
 		setTitle("GridLayout");
 		setSize(300,300);
 		setVisible(true);
@@ -32,7 +32,7 @@ public class LayoutTest{
 	
 		c.setLayout(f);
 		for(int i=1;i<=10;i++)
-			c.add(new JButton("¹öÆ°"));
+			c.add(new JButton(""));
 		setTitle("FlowLayout");
 		setSize(300,200);
 		setVisible(true);
