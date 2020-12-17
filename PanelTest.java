@@ -24,7 +24,7 @@ class Panel2 extends Panel
 public class PanelTest extends Frame{
 	public PanelTest()
 	{
-		super("½Ç½À ¿¹Á¦");
+		super("ì‹¤ìŠµ ì˜ˆì œ");
 		setLayout(new GridLayout(1,2));
 		add(new Panel1());
 		add(new Panel2());
