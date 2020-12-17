@@ -13,8 +13,8 @@ public class ColorTest2 extends JFrame {
 		p1.setBackground(Color.RED);
 		p2.setBackground(Color.YELLOW);
 		
-		Button b1=new Button("»¡°£»ö");
-		Button b2=new Button("³ë¶õ»ö");
+		Button b1=new Button("Â»Â¡Â°Â£Â»Ã¶");
+		Button b2=new Button("Â³Ã«Â¶ÃµÂ»Ã¶");
 		
 		p1.add(b1);
 		p2.add(b2);
