@@ -11,7 +11,7 @@ public class M2Mile extends JFrame implements ActionListener
 	{
 		setSize(400,200);
 		setLayout(new BorderLayout());
-		setTitle("¸¶ÀÏ<->¹ÌÅÍ·Î º¯È¯");
+		setTitle("ë§ˆì¼<->ë¯¸í„°ë¡œ ë³€í™˜");
 		
 		JPanel p1=new JPanel();
 		JPanel p2=new JPanel();
@@ -21,15 +21,15 @@ public class M2Mile extends JFrame implements ActionListener
 		JPanel pg2=new JPanel();
 		pg1.setLayout(new BorderLayout());
 		pg2.setLayout(new BorderLayout());
-		JLabel label1=new JLabel("°Å¸®¸¦ ÀÔ·ÂÇÏ½Ã¿À");
-		JLabel label2=new JLabel("¸¶ÀÏ->¹ÌÅÍ·Î º¯È¯");
-		JLabel label3=new JLabel("¹ÌÅÍ->¸¶ÀÏ·Î º¯È¯");
+		JLabel label1=new JLabel("ê±°ë¦¬ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
+		JLabel label2=new JLabel("ë§ˆì¼->ë¯¸í„°ë¡œ ë³€í™˜");
+		JLabel label3=new JLabel("ë¯¸í„°->ë§ˆì¼ë¡œ ë³€í™˜");
 		t1=new JTextField(5);
 		t2=new JTextField(25);
 		t2.setEditable(false);
-		b1=new JButton("º¯È¯1");
-		b2=new JButton("º¯È¯2");
-		b3=new JButton("Á¾·á");
+		b1=new JButton("ë³€í™˜1");
+		b2=new JButton("ë³€í™˜2");
+		b3=new JButton("ì¢…ë£Œ");
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 		b3.addActionListener(this);
@@ -58,14 +58,14 @@ public class M2Mile extends JFrame implements ActionListener
 			int t=Integer.parseInt(t1.getText());
 			double m=t*1609344;
 			int m1=(int)(m*0.001);
-			t2.setText(t+"¸¶ÀÏÀº "+m1+" ¹ÌÅÍÀÔ´Ï´Ù.");
+			t2.setText(t+"ë§ˆì¼ì€ "+m1+" ë¯¸í„°ì…ë‹ˆë‹¤.");
 		}
 		else if(e.getSource()==b2)
 		{
 			int t=Integer.parseInt(t1.getText());
 			double mi=(double)t/1609344;
 			double m1=(double)(mi*1000);
-			t2.setText(t+"¹ÌÅÍ´Â "+m1+" ¸¶ÀÏÀÔ´Ï´Ù.");
+			t2.setText(t+"ë¯¸í„°ëŠ” "+m1+" ë§ˆì¼ì…ë‹ˆë‹¤.");
 		}
 		else
 		{
