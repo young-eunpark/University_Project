@@ -12,7 +12,7 @@ public class Mile2Km extends JFrame implements ActionListener{
 	{
 		setSize(300,200);
 		setLayout(new BorderLayout());
-		setTitle("¸¶ÀÏÀ» Å³·Î¹ÌÅÍ·Î º¯È¯");
+		setTitle("ë§ˆì¼ì„ í‚¬ë¡œë¯¸í„°ë¡œ ë³€í™˜");
 		
 		JPanel p1=new JPanel();
 		JPanel p2=new JPanel();
@@ -21,12 +21,12 @@ public class Mile2Km extends JFrame implements ActionListener{
 		
 		pg.setLayout(new BorderLayout());
 		
-		JLabel label=new JLabel("°Å¸®¸¦ ¸¶ÀÏ ´ÜÀ§·Î ÀÔ·ÂÇÏ½Ã¿À");
+		JLabel label=new JLabel("ê±°ë¦¬ë¥¼ ë§ˆì¼ ë‹¨ìœ„ë¡œ ì…ë ¥í•˜ì‹œì˜¤");
 		t1=new JTextField(5);
 		t2=new JTextField(25);
 		t2.setEditable(false);
-		b1=new JButton("º¯È¯");
-		b2=new JButton("Á¾·á");
+		b1=new JButton("ë³€í™˜");
+		b2=new JButton("ì¢…ë£Œ");
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 		t1.setText("1");
@@ -49,7 +49,7 @@ public class Mile2Km extends JFrame implements ActionListener{
 			double k=t*1.609344;
 			int k1=(int)(k*100);
 			double k2=k1/100.0;
-			t2.setText(t+"¸¶ÀÏÀº "+k2+" Å³·Î¹ÌÅÍÀÔ´Ï´Ù.");
+			t2.setText(t+"ë§ˆì¼ì€ "+k2+" í‚¬ë¡œë¯¸í„°ì…ë‹ˆë‹¤.");
 		}
 		else
 		{
