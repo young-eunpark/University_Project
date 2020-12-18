@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-/*public class ListenerSample3 extends JFrame{
+public class ListenerSample3 extends JFrame{
 	JButton btn1,btn2;
 	JPanel pnl;
 	JLabel lbl;
@@ -12,13 +12,13 @@ import java.awt.*;
 	
 	ListenerSample3()
 	{
-		setTitle("ActionÀÌº¥Æ® Å¬·¡½º ¸®½º³Ê ÀÛ¼º");
+		setTitle("Actionì´ë²¤íŠ¸ í´ë˜ìŠ¤ ë¦¬ìŠ¤ë„ˆ ì‘ì„±");
 		pnl=new JPanel();
-		btn1=new JButton("ÇÎÅ©");
+		btn1=new JButton("í•‘í¬");
 		listener=new MyActionListener3();
 		btn1.addActionListener(listener);
 		pnl.add(btn1);
-		btn2=new JButton("³ì»ö");
+		btn2=new JButton("ë…¹ìƒ‰");
 		btn2.addActionListener(listener);
 		pnl.add(btn2);
 		add(pnl);
@@ -34,10 +34,10 @@ import java.awt.*;
 		public void actionPerformed(ActionEvent e)
 		{
 			JButton b=(JButton)e.getSource();
-			if(b.getText().equals("ÇÎÅ©"))
+			if(b.getText().equals("í•‘í¬"))
 				pnl.setBackground(Color.PINK);
-			if(b.getText().equals("³ì»ö"))
+			if(b.getText().equals("ë…¹ìƒ‰"))
 				pnl.setBackground(Color.GREEN);
 		}
 	}
-}*/
+}
