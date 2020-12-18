@@ -20,10 +20,10 @@ public class Calculation extends JFrame implements ActionListener{
 		
 		pg.setLayout(new BorderLayout());
 		
-		JLabel label1=new JLabel("Ã¹¹øÂ° ¼ö : ");
-		JLabel label2=new JLabel("µÎ¹øÂ° ¼ö : ");
-		JLabel label3=new JLabel("¿¬»ê½Ä : ");
-		JLabel label4=new JLabel("¼ö½Ä °á°ú : ");
+		JLabel label1=new JLabel("ì²«ë²ˆì§¸ ìˆ˜ : ");
+		JLabel label2=new JLabel("ë‘ë²ˆì§¸ ìˆ˜ : ");
+		JLabel label3=new JLabel("ì—°ì‚°ì‹ : ");
+		JLabel label4=new JLabel("ìˆ˜ì‹ ê²°ê³¼ : ");
 		t1=new JTextField(5);
 		t2=new JTextField(5);
 		t3=new JTextField(25);
