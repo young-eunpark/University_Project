@@ -11,7 +11,7 @@ public class Calweight extends JFrame implements ActionListener{
 	{
 		setSize(300,200);
 		setLayout(new BorderLayout());
-		setTitle("Ã¼Áß °è»ê");
+		setTitle("ì²´ì¤‘ ê³„ì‚°");
 		
 		JPanel p1=new JPanel();
 		JPanel p2=new JPanel();
@@ -19,14 +19,14 @@ public class Calweight extends JFrame implements ActionListener{
 		JPanel p4=new JPanel();
 		JPanel pg1=new JPanel(new GridLayout(2,3));
 		
-		l1=new JLabel("Å° ´Â? ");
-		l2=new JLabel("Ã¼ÁßÀº? ");
-		l3=new JLabel("°á°ú ÀÔ·Â");
+		l1=new JLabel("í‚¤ ëŠ”? ");
+		l2=new JLabel("ì²´ì¤‘ì€? ");
+		l3=new JLabel("ê²°ê³¼ ì…ë ¥");
 		l4=new JLabel("cm");
 		l5=new JLabel("kg");
 		t1=new JTextField(10);
 		t2=new JTextField(10);
-		b=new JButton("Ã¼Áß °è»ê");
+		b=new JButton("ì²´ì¤‘ ê³„ì‚°");
 		b.addActionListener(this);
 		t1.setText("1");
 		t2.setText("1");
@@ -54,17 +54,17 @@ public class Calweight extends JFrame implements ActionListener{
 			if(w>nw)
 			{
 				l3.setBackground(Color.RED);
-				l3.setText("°úÃ¼ÁßÀÔ´Ï´Ù");
+				l3.setText("ê³¼ì²´ì¤‘ì…ë‹ˆë‹¤");
 			}
 			else if(w==nw)
 			{
 				l3.setBackground(Color.GREEN);
-				l3.setText("Á¤»óÃ¼ÁßÀÔ´Ï´Ù");
+				l3.setText("ì •ìƒì²´ì¤‘ì…ë‹ˆë‹¤");
 			}
 			else if(w<nw)
 			{
 				l3.setBackground(Color.YELLOW);
-				l3.setText("ÀúÃ¼ÁßÀÔ´Ï´Ù.");
+				l3.setText("ì €ì²´ì¤‘ì…ë‹ˆë‹¤.");
 			}
 		}
 		else
