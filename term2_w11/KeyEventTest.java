@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class KeyEventTest extends JFrame{
 	JPanel contentPane = new JPanel();
-	JLabel jl=new JLabel("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	JLabel jl=new JLabel("í‚¤ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 	KeyEventTest()
 	{
 		setContentPane(contentPane);
@@ -21,7 +21,7 @@ public class KeyEventTest extends JFrame{
 		{
 			if(e.isAltDown()==true)
 			{
-				System.out.println("AltÅ°°¡ ´­·È½À´Ï´Ù.");
+				System.out.println("Altí‚¤ê°€ ëˆŒë ¸ìŠµë‹ˆë‹¤.");
 			}
 		}
 	}
