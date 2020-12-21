@@ -9,25 +9,25 @@ public class ListenerSample5 extends JFrame{
 	JLabel lbl;
 	ListenerSample5()
 	{
-		setTitle("Action ÀÌº¥Æ® ¹«¸í Å¬·¡½º Ã³¸®");
+		setTitle("Action ì´ë²¤íŠ¸ ë¬´ëª… í´ë˜ìŠ¤ ì²˜ë¦¬");
 		
 		pnl=new JPanel();
 		
-		btn1=new JButton("ÇÎÅ©");
+		btn1=new JButton("í•‘í¬");
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JButton b=(JButton)e.getSource();
-				if(b.getText().equals("ÇÎÅ©"))
+				if(b.getText().equals("í•‘í¬"))
 					pnl.setBackground(Color.PINK);
 			}
 		});
 		pnl.add(btn1);
 		
-		btn2=new JButton("³ì»ö");
+		btn2=new JButton("ë…¹ìƒ‰");
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JButton b=(JButton)e.getSource();
-				if(b.getText().equals("³ì»ö"))
+				if(b.getText().equals("ë…¹ìƒ‰"))
 					pnl.setBackground(Color.GREEN);
 			}
 		});
