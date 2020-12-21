@@ -10,15 +10,15 @@ public class ListenerSample2 extends JFrame{
 	MyActionListener2 listener;
 	ListenerSample2()
 	{
-		setTitle("ActionÀÌº¥Æ® ¿ÜºÎÅ¬·¡½º ¸®½º³Ê ÀÛ¼º");
+		setTitle("Actionì´ë²¤íŠ¸ ì™¸ë¶€í´ë˜ìŠ¤ ë¦¬ìŠ¤ë„ˆ ì‘ì„±");
 		pnl=new JPanel();
 		
-		btn1=new JButton("ÇÎÅ©");
+		btn1=new JButton("í•‘í¬");
 		listener=new MyActionListener2(pnl);
 		btn1.addActionListener(listener);
 		pnl.add(btn1);
 		
-		btn2=new JButton("³ì»ö");
+		btn2=new JButton("ë…¹ìƒ‰");
 		btn2.addActionListener(listener);
 		pnl.add(btn2);
 		
@@ -40,9 +40,9 @@ class MyActionListener2 implements ActionListener
 	public void actionPerformed(ActionEvent e)
 	{
 		JButton b=(JButton)e.getSource();
-		if(b.getText().equals("ÇÎÅ©"))
+		if(b.getText().equals("í•‘í¬"))
 			jp.setBackground(Color.PINK);
-		if(b.getText().equals("³ì»ö"))
+		if(b.getText().equals("ë…¹ìƒ‰"))
 			jp.setBackground(Color.GREEN);
 	}
 }
