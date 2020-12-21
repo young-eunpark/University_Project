@@ -17,19 +17,19 @@ public class ColorPanel extends JFrame implements ActionListener{
 		
 		tf=new JTextField(30);
 		
-		b1=new JButton("»¡°­");
+		b1=new JButton("ë¹¨ê°•");
 		b1.setBackground(Color.RED);
 		b1.addActionListener(this);
 		
-		b2=new JButton("ÃÊ·Ï");
+		b2=new JButton("ì´ˆë¡");
 		b2.setBackground(Color.GREEN);
 		b2.addActionListener(this);
 		
-		b3=new JButton("³ë¶û");
+		b3=new JButton("ë…¸ë‘");
 		b3.setBackground(Color.YELLOW);
 		b3.addActionListener(this);
 		
-		b4=new JButton("Á¾·á");
+		b4=new JButton("ì¢…ë£Œ");
 		b4.setBackground(Color.CYAN);
 		b4.addActionListener(this);
 		
@@ -52,15 +52,15 @@ public class ColorPanel extends JFrame implements ActionListener{
 	{
 		if(e.getSource()==b1) {
 			p1.setBackground(Color.RED);
-			tf.setText("»¡°­ÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù");
+			tf.setText("ë¹¨ê°•ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤");
 		}
 		else if(e.getSource()==b2) {
 			p1.setBackground(Color.GREEN);
-			tf.setText("ÃÊ·ÏÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù");
+			tf.setText("ì´ˆë¡ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤");
 		}
 		else if(e.getSource()==b3) {
 			p1.setBackground(Color.YELLOW);
-			tf.setText("³ë¶ûÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù");
+			tf.setText("ë…¸ë‘ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤");
 		}
 		else if(e.getSource()==b4)
 			System.exit(0);
