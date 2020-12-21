@@ -9,14 +9,14 @@ public class ListenerSample4 extends JFrame implements ActionListener{
 	JLabel lbl;
 	public ListenerSample4()
 	{
-		setTitle("Action ÀÌº¥Æ® Å¬·¡½º ÀÚÃ¼ Ã³¸®");
+		setTitle("Action ì´ë²¤íŠ¸ í´ë˜ìŠ¤ ìì²´ ì²˜ë¦¬");
 		pnl=new JPanel();
 		
-		btn1=new JButton("ÇÎÅ©");
+		btn1=new JButton("í•‘í¬");
 		btn1.addActionListener(this);
 		pnl.add(btn1);
 		
-		btn2=new JButton("³ì»ö");
+		btn2=new JButton("ë…¹ìƒ‰");
 		btn2.addActionListener(this);
 		pnl.add(btn2);
 		
