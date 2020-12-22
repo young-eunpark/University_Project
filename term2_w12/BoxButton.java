@@ -9,8 +9,8 @@ public class BoxButton extends JFrame{
 	{
 		setTitle("ChechBox Practice Frame");
 		setLayout(new FlowLayout());
-		JCheckBox j1=new JCheckBox("¹öÆ° ºñÈ°¼ºÈ­");
-		JCheckBox j2=new JCheckBox("¹öÆ° °¨Ãß±â");
+		JCheckBox j1=new JCheckBox("ë²„íŠ¼ ë¹„í™œì„±í™”");
+		JCheckBox j2=new JCheckBox("ë²„íŠ¼ ê°ì¶”ê¸°");
 
 		add(j1);
 		add(j2);
