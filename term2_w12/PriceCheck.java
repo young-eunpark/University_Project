@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class PriceCheck extends JFrame implements ItemListener{
 	JCheckBox[] cbox=new JCheckBox[4];
-	String[] change={"¿£Áø¿ÀÀÏ ±³È¯","ÀÚµ¿º¯¼Ó±â ¿ÀÀÏ ±³È¯","¿¡¾îÄÁ ÇÊÅÍ ±³È¯","Å¸ÀÌ¾î ±³È¯"};
+	String[] change={"ì—”ì§„ì˜¤ì¼ êµí™˜","ìë™ë³€ì†ê¸° ì˜¤ì¼ êµí™˜","ì—ì–´ì»¨ í•„í„° êµí™˜","íƒ€ì´ì–´ êµí™˜"};
 	int[] price= {45000,80000,30000,100000};
 	int money=0;
 	JLabel lbl;
@@ -21,7 +21,7 @@ public class PriceCheck extends JFrame implements ItemListener{
 		}
 		for(int i=0;i<4;i++)
 			pnl.add(cbox[i]);
-		lbl=new JLabel("ÇöÀç±îÁöÀÇ °¡°İÀº "+money+"¿ø ÀÔ´Ï´Ù.");
+		lbl=new JLabel("í˜„ì¬ê¹Œì§€ì˜ ê°€ê²©ì€ "+money+"ì› ì…ë‹ˆë‹¤.");
 		lbl.setFont(new Font("Serif",Font.BOLD|Font.ITALIC,30));
 		pnl.add(lbl);
 		
@@ -54,7 +54,7 @@ public class PriceCheck extends JFrame implements ItemListener{
 				money-=price[3];
 		}
 		
-		lbl.setText("ÇöÀç±îÁöÀÇ °¡°İÀº "+money+"¿ø ÀÔ´Ï´Ù.");
+		lbl.setText("í˜„ì¬ê¹Œì§€ì˜ ê°€ê²©ì€ "+money+"ì› ì…ë‹ˆë‹¤.");
 	}	
 	public static void main(String[] args) {
 		new PriceCheck();
