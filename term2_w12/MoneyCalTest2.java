@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class MoneyCalTest2 extends JFrame{
 	MoneyCalTest2(){
-		setTitle("È­Æó ±³È¯");
+		setTitle("í™”í êµí™˜");
 		setContentPane(new MyPanel2());
 		
 		setSize(300,300);
@@ -21,9 +21,9 @@ public class MoneyCalTest2 extends JFrame{
 			JPanel p1=new JPanel();
 			p1.setLayout(new FlowLayout());
 			p1.setBackground(Color.cyan);
-			JLabel l1=new JLabel("±İ¾×");
+			JLabel l1=new JLabel("ê¸ˆì•¡");
 			JTextField f1=new JTextField(10);
-			JButton b=new JButton("°è»ê");
+			JButton b=new JButton("ê³„ì‚°");
 			p1.setSize(300,100);
 			p1.add(l1);
 			p1.add(f1);
@@ -32,7 +32,7 @@ public class MoneyCalTest2 extends JFrame{
 			JPanel p2=new JPanel();
 			p2.setBackground(Color.cyan);
 			p2.setLayout(null);
-			String[] mname= {"¿À¸¸¿ø","¸¸¿ø","Ãµ¿ø","500¿ø","100¿ø","50¿ø","10¿ø","1¿ø"};
+			String[] mname= {"ì˜¤ë§Œì›","ë§Œì›","ì²œì›","500ì›","100ì›","50ì›","10ì›","1ì›"};
 			int[] price= {50000,10000,1000,500,100,50,10,1};
 			JLabel[] lbl=new JLabel[8];
 			JTextField[] field= new JTextField[8];
