@@ -7,9 +7,9 @@ public class ChangeNum extends JFrame{
 	JTextField tf1=new JTextField(10);
 	JTextField tf2=new JTextField(10);
 	JRadioButton[] rb=new JRadioButton[4];
-	String[] text= {"10Áø¼ö","2Áø¼ö","8Áø¼ö","16Áø¼ö"};
+	String[] text= {"10ì§„ìˆ˜","2ì§„ìˆ˜","8ì§„ìˆ˜","16ì§„ìˆ˜"};
 	ChangeNum(){
-		setTitle("Áø¹ý º¯È¯");
+		setTitle("ì§„ë²• ë³€í™˜");
 		Container c=getContentPane();
 		c.setLayout(new FlowLayout());
 		
@@ -39,19 +39,19 @@ public class ChangeNum extends JFrame{
 			String txt=((JRadioButton)e.getItem()).getText();
 			try {
 				switch(txt) {
-				case "10Áø¼ö":
+				case "10ì§„ìˆ˜":
 					n=Integer.parseInt(tf1.getText());
 					tf2.setText(Integer.toString(n));
 					break;
-				case "2Áø¼ö":
+				case "2ì§„ìˆ˜":
 					n=Integer.parseInt(tf1.getText());
 					tf2.setText(Integer.toBinaryString(n));
 					break;
-				case "8Áø¼ö":
+				case "8ì§„ìˆ˜":
 					n=Integer.parseInt(tf1.getText());
 					tf2.setText(Integer.toOctalString(n));
 					break;
-				case "16Áø¼ö":
+				case "16ì§„ìˆ˜":
 					n=Integer.parseInt(tf1.getText());
 					tf2.setText(Integer.toHexString(n));
 					break;
