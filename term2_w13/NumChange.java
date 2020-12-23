@@ -7,13 +7,13 @@ import javax.swing.event.*;
 public class NumChange extends JFrame implements ActionListener{
 	JTextField src=new JTextField(8);
 	JTextField dest=new JTextField(8);
-	String[] text= {"10Áø¼ö","2Áø¼ö","8Áø¼ö","16Áø¼ö"};
+	String[] text= {"10ì§„ìˆ˜","2ì§„ìˆ˜","8ì§„ìˆ˜","16ì§„ìˆ˜"};
 	JComboBox combo1=new JComboBox(text);
 	JComboBox combo2=new JComboBox(text);
 	int n, sign=1;
 	
 	NumChange(){
-		setTitle("Áø¹ý º¯È¯2");
+		setTitle("ì§„ë²• ë³€í™˜2");
 		Container c=getContentPane();
 		c.setLayout(new GridLayout(2,1));
 		
@@ -37,16 +37,16 @@ public class NumChange extends JFrame implements ActionListener{
 			s1=combo1.getSelectedItem().toString();
 			try {
 				switch(s1) {
-					case "10Áø¼ö":
+					case "10ì§„ìˆ˜":
 						n=Integer.parseInt(src.getText());
 						break;
-					case "2Áø¼ö":
+					case "2ì§„ìˆ˜":
 						n=Integer.parseInt(src.getText(),2);
 						break;
-					case "8Áø¼ö":
+					case "8ì§„ìˆ˜":
 						n=Integer.parseInt(src.getText(),8);
 						break;
-					case "16Áø¼ö":
+					case "16ì§„ìˆ˜":
 						n=Integer.parseInt(src.getText(),16);
 						break;
 				}
@@ -63,19 +63,19 @@ public class NumChange extends JFrame implements ActionListener{
 			s2=combo2.getSelectedItem().toString();
 			try {
 				switch(s2) {
-					case "10Áø¼ö":
+					case "10ì§„ìˆ˜":
 						if(sign<0) dest.setText("-"+Integer.toString(n));
 						else dest.setText(Integer.toString(n));
 						break;
-					case "2Áø¼ö":
+					case "2ì§„ìˆ˜":
 						if(sign<0) dest.setText("-"+Integer.toBinaryString(n));
 						else dest.setText(Integer.toBinaryString(n));
 						break;
-					case "8Áø¼ö":
+					case "8ì§„ìˆ˜":
 						if(sign<0) dest.setText("-"+Integer.toOctalString(n));
 						else dest.setText(Integer.toOctalString(n));
 						break;
-					case "16Áø¼ö":
+					case "16ì§„ìˆ˜":
 						if(sign<0) dest.setText("-"+Integer.toHexString(n));
 						else dest.setText(Integer.toHexString(n));
 						break;
