@@ -8,7 +8,7 @@ public class SliderTest extends JFrame {
 	JSlider slide;
 	JLabel lbl;
 	SliderTest(){
-		setTitle("½½¶óÀÌµå ¿¹Á¦");
+		setTitle("ìŠ¬ë¼ì´ë“œ ì˜ˆì œ");
 		setLayout(new BorderLayout());
 		
 		slide=new JSlider(JSlider.HORIZONTAL,0,100,50);
