@@ -7,7 +7,7 @@ public class ComboBoxTest extends JFrame{
 	JComboBox cbox;
 	JTextField tf;
 	ComboBoxTest(){
-		setTitle("ÄÞº¸¹Ú½º");
+		setTitle("");
 		setSize(300,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
