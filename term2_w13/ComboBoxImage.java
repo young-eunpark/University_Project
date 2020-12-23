@@ -17,7 +17,7 @@ public class ComboBoxImage extends JFrame{
 			new ImageIcon("images/error.jpg")
 	};
 	ComboBoxImage(){
-		setTitle("ÄŞº¸¹Ú½º 2");
+		setTitle("ì½¤ë³´ë°•ìŠ¤ 2");
 		setSize(300,300);
 		setLayout(new FlowLayout());
 		
@@ -29,16 +29,16 @@ public class ComboBoxImage extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				JComboBox cb=(JComboBox)e.getSource();
 				String item=cb.getSelectedItem().toString();
-				if(item.equals("»ç°ú")) {
+				if(item.equals("ì‚¬ê³¼")) {
 					imgLabel.setIcon(image[0]);
 				}
-				else if(item.equals("¹Ù³ª³ª")) {
+				else if(item.equals("ë°”ë‚˜ë‚˜")) {
 					imgLabel.setIcon(image[1]);
 				}
-				else if(item.equals("Å°À§")) {
+				else if(item.equals("í‚¤ìœ„")) {
 					imgLabel.setIcon(image[2]);
 				}
-				else if(item.equals("¸Á°í")) {
+				else if(item.equals("ë§ê³ ")) {
 					imgLabel.setIcon(image[3]);
 				}
 				else {
