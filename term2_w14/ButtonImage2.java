@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class ButtonImage2 extends JFrame{
 	ButtonImage2(){
-		super("ÀÌ¹ÌÁö ±×¸®±â ¿¬½À");
+		super("ì´ë¯¸ì§€ ê·¸ë¦¬ê¸° ì—°ìŠµ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		setContentPane(new ShowImage2());
