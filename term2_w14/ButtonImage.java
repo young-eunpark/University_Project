@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 public class ButtonImage extends JFrame{
 	ButtonImage(){
-		super("ÀÌ¹ÌÁö ±×¸®±â ¿¬½À");
+		super("ì´ë¯¸ì§€ ê·¸ë¦¬ê¸° ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		setContentPane(new ShowImage());
