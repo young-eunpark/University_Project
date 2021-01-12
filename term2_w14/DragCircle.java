@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 public class DragCircle extends JFrame{
 	DragCircle(){
-		super("ÀÌ¹ÌÁö À§¿¡ ¿ø µå·¡±ë ¿¬½À");
+		super("ì´ë¯¸ì§€ ìœ„ì— ì› ë“œë˜ê¹… ì—°ìŠµ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		setContentPane(new GraphicCircle());
