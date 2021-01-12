@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 public class DividePicture extends JFrame{
 	DividePicture(){
-		super("±×·¡ÇÈ ÀÌ¹ÌÁö ¿¬½À");
+		super("ê·¸ë˜í”½ ì´ë¯¸ì§€ ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		setContentPane(new MyPanel());
