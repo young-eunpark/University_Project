@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class BusinessCard extends JFrame{
 	Container c=getContentPane();
 	BusinessCard(){
-		setTitle("¸íÇÔ");
+		setTitle("ëª…í•¨");
 		setSize(300,150);
 		Bcard b = new Bcard();
 		b.setBackground(Color.lightGray);
@@ -20,12 +20,12 @@ public class BusinessCard extends JFrame{
 		public void paint(Graphics g) {
 			super.paintComponents(g);
 			g.setColor(Color.black);
-			g.setFont(new Font("¸íÁ¶Ã¼",Font.BOLD,20));
-			g.drawString("È«±æµ¿", 150, 40);
+			g.setFont(new Font("ëª…ì¡°ì²´",Font.BOLD,20));
+			g.drawString("í™ê¸¸ë™", 150, 40);
 			g.setColor(Color.blue);
-			g.setFont(new Font("°íµñÃ¼",Font.BOLD,15));
-			g.drawString("È£¼­´ëÇĞ±³", 150, 60);
-			g.drawString("041-540-0001",150,80);
+			g.setFont(new Font("ê³ ë”•ì²´",Font.BOLD,15));
+			g.drawString("OOëŒ€í•™êµ", 150, 60);
+			g.drawString("031-000-0001",150,80);
 			g.drawImage(img, 20, 20, 80,80,this);
 		}
 	}
