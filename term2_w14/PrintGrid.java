@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 public class PrintGrid extends JFrame{
 	PrintGrid(){
-		super("°İÀÚ ±×¸®±â");
+		super("ê²©ì ê·¸ë¦¬ê¸°");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new Grid());
 		setSize(300,200);
@@ -15,10 +15,10 @@ public class PrintGrid extends JFrame{
 			super.paintComponent(g);
 			int dw = getWidth()/10;
 			for(int i=1; i<=9; i++)
-				g.drawLine(i*dw,  0, i*dw, getHeight()); // ¼öÁ÷¼±
+				g.drawLine(i*dw,  0, i*dw, getHeight()); // ìˆ˜ì§ì„ 
 			int dh = getHeight()/10;			
 			for(int i=1; i<=9; i++)
-				g.drawLine(0, i*dh, getWidth(), i*dh); //  ¼öÆò¼± 
+				g.drawLine(0, i*dh, getWidth(), i*dh); //  ìˆ˜í‰ì„  
 		}
 	}
 	public static void main(String[] args) {
