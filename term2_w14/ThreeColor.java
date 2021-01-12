@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 public class ThreeColor extends JFrame{
 	ThreeColor(){
-		setTitle("»ï¿ø»ö »ç¿ë  ¿¹Á¦");
+		setTitle("ì‚¼ì›ìƒ‰ ì‚¬ìš© ì˜ˆì œ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		add(new JComponent() {
 			public void paintComponent(Graphics g) {
