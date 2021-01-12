@@ -6,7 +6,7 @@ import javax.swing.event.*;
 import java.awt.event.*;
 public class Olympic extends JFrame{
 	Olympic() {
-		super("¿À·û±â");
+		super("ì˜¤ë¥œê¸°");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new Flag());
 		setSize(350,250);
