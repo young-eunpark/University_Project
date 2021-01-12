@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 public class PlusandMinus extends JFrame {
 	PlusandMinus(){
-		super("±×·¡ÇÈ ÀÌ¹ÌÁö È®´ë Ãà¼Ò ¿¬½À");
+		super("ê·¸ë˜í”½ ì´ë¯¸ì§€ í™•ëŒ€ ì¶•ì†Œ ì—°ìŠµ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		setContentPane(new MyPanel());
