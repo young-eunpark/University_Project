@@ -1,0 +1,15 @@
+package week03
+
+import java.util.Scanner;
+
+public class Prac01 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner stdIn=new Scanner(System.in);
+		System.out.print("키를 입력하시오(cm) : ");
+		int cm=stdIn.nextInt();
+		double i = cm/2.54;
+		double f = i/12;
+		System.out.println(cm +"cm는"+(int)f+"피트 "+(int)(i-((int)f*12))+"인치 입니다.");
+	}
+}
