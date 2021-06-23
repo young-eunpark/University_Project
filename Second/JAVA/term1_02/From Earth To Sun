@@ -1,0 +1,14 @@
+package week03
+
+public class Prac01 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int lightspeed=300000;
+		int minute=8;
+		double year=((lightspeed*minute*60)/300/360/24);
+		
+		System.out.println("지구에서 태양까지의 거리는 "+(lightspeed*minute*60));
+		System.out.println("KTX(300km/h)를 타고 태양까지 가는데 걸리는 시간은 "+(int)(year-0.5)+
+        "년 입니다.");
+	}
+}
