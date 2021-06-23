@@ -1,0 +1,13 @@
+package week03
+
+public class Prac01 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("float 최대 - \t"+Float.MAX_VALUE);
+		System.out.println("float 최소 - \t"+Float.MIN_VALUE);
+		
+		System.out.println("");
+		System.out.println("double 최대 - \t"+Double.MAX_VALUE);
+		System.out.println("double 최소 - \t"+Double.MIN_VALUE);
+	}
+}
