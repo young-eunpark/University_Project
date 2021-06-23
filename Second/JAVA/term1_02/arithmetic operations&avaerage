@@ -1,0 +1,21 @@
+package week03
+
+import java.util.Scanner;
+
+public class Prac01 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner stdIn=new Scanner(System.in);
+		System.out.print("첫번째 수 입력 : ");
+		double d1=stdIn.nextDouble();
+		
+		System.out.print("두번째 수 입력 : ");
+		double d2=stdIn.nextDouble();
+		
+		System.out.println("덧셈 : "+ d1 + " + " + d2 + " = " + (d1+d2) + "입니다.");
+		System.out.println("뺄셈 : "+ d1 + " - " + d2 + " = " + (d1-d2) + "입니다.");
+		System.out.println("곱셈 : "+ d1 + " * " + d2 + " = " + (d1*d2) + "입니다.");
+		System.out.println("나눗셈 : "+ d1 + " / " + d2 + " = " + (d1/d2) + "입니다.");
+		System.out.println("평균값 : " + (d1+d2)/2 + "입니다.");
+	}
+}
