@@ -1,0 +1,19 @@
+package week02;
+
+import java.util.Scanner;
+
+public class prac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("2개의 정수를 공간(space)으로 구분하여 입력 : ");
+		int i=input.nextInt();
+		int j=input.nextInt();
+		
+		System.out.println(i + "+" + j + "의 결과는 " + (i+j) +"입니다.");
+		System.out.println(i + "-" + j + "의 결과는 " + (i-j) +"입니다.");
+		System.out.println(i + "*" + j + "의 결과는 " + (i*j) +"입니다.");
+		System.out.println(i + "/" + j + "의 결과는 " + ((float)i/(float)j) +"입니다.");
+	}
+}
