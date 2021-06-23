@@ -1,0 +1,28 @@
+package week02;
+
+import java.util.Scanner;
+
+public class prac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("2개의 정수와 연산자를 공간(space)으로 구분하여 입력 : ");
+		int i = stdIn.nextInt();
+		int j = stdIn.nextInt();
+		String op = stdIn.next();
+		
+		if(op == "+") {
+			System.out.println(i + op + j);
+		}
+		if(op == "-") {
+			System.out.println(i + op + j);
+		}
+		if(op == "*") {
+			System.out.println(i + op + j);
+		}
+		if(op == "/") {
+			System.out.println(i + op + j);
+		}
+	}
+}
