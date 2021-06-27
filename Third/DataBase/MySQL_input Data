@@ -1,0 +1,55 @@
+// 테이블 생성
+CREATE TABLE Sailors (
+        sid DECIMAL(4),
+        sname VARCHAR(10),
+        rating DECIMAL(2),
+        age DECIMAL(4,1),
+        CONSTRAINT Sailors_pk PRIMARY KEY(sid))
+DEFAULT CHARACTER SET = euckr;
+CREATE TABLE Boats (
+        bid DECIMAL(3),
+        bname VARCHAR(10),
+        color VARCHAR(10),
+        CONSTRAINT Boats_pk PRIMARY KEY(bid))
+DEFAULT CHARACTER SET = euckr;
+CREATE TABLE Reserves(
+		sid DECIMAL(4),
+        bid DECIMAL(3),
+        day DATE,
+        CONSTRAINT Reserves_pk PRIMARY KEY(sid,bid,day),
+        CONSTRAINT Reserves_Sailors_pk FOREIGN KEY(sid) REFERENCES Sailors(sid),
+        CONSTRAINT Reserves_Boats_pk FOREIGN KEY(bid) REFERENCES boats(bid))
+DEFAULT CHARACTER SET = euckr;
+
+// Sailors 테이블 데이터 입력
+INSERT INTO Sailors VALUES(22,"Dustin",7,45.0);
+INSERT INTO Sailors VALUES(29,"Brutus",1,33.0);
+INSERT INTO Sailors VALUES(31,"Lubber",8,55.5);
+INSERT INTO Sailors VALUES(32,"Andy",8,25.5);
+INSERT INTO Sailors VALUES(58,"Rusty",10,35.0);
+INSERT INTO Sailors VALUES(64,"Horatio",7,35.0);
+INSERT INTO Sailors VALUES(71,"Zorba",10,16.0);
+INSERT INTO Sailors VALUES(74,"Horatio",9,35.0);
+INSERT INTO Sailors VALUES(85,"Art",3,25.5);
+INSERT INTO Sailors VALUES(95,"Bob",3,63.5);
+SELECT * FROM Sailors; // 데이터 입력 확인
+
+// Boats 테이블 데이터 입력
+INSERT INTO Boats VALUES(101,"Interlake","blue");
+INSERT INTO Boats VALUES(102,"Interlake","red");
+INSERT INTO Boats VALUES(103,"Clipper","green");
+INSERT INTO Boats VALUES(104,"Marine","red");
+SELECT * FROM Boats; // 데이터 입력 확인
+
+// Reserves 테이블 데이터 입력
+INSERT INTO Reserves VALUES(22,101,"1998-10-10");
+INSERT INTO Reserves VALUES(22,102,"1998-10-10");
+INSERT INTO Reserves VALUES(22,103,"1998-10-08");
+INSERT INTO Reserves VALUES(22,104,"1998-10-07");
+INSERT INTO Reserves VALUES(31,102,"1998-11-10");
+INSERT INTO Reserves VALUES(31,103,"1998-11-06");
+INSERT INTO Reserves VALUES(31,104,"1998-11-12");
+INSERT INTO Reserves VALUES(64,101,"1998-09-05");
+INSERT INTO Reserves VALUES(64,102,"1998-09-08");
+INSERT INTO Reserves VALUES(74,103,"1998-09-08");
+SELECT * FROM Reserves; // 데이터 입력 확인
