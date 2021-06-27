@@ -8,7 +8,7 @@ public class Chap5_1 {
 		Connection conn;
 		try {
 			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/report1","re1","Report1@");
-			System.out.println("µ•¿Ã≈Õ ∫£¿ÃΩ∫ ø¨∞· º∫∞¯");
+			System.out.println("Îç∞Ïù¥ÌÑ∞ Î≤†Ïù¥Ïä§ Ïó∞Í≤∞ ÏÑ±Í≥µ");
 			System.out.println();
 			
 			Statement stmt=conn.createStatement();
@@ -19,7 +19,7 @@ public class Chap5_1 {
 			ResultSet b=stmt1.executeQuery("select * from Boats");
 			ResultSet r=stmt2.executeQuery("select * from Reserves");
 			
-			System.out.println("------Sailors µ•¿Ã≈Õ------");
+			System.out.println("------Sailors Îç∞Ïù¥ÌÑ∞------");
 			while(s.next()) {
 				int sid = s.getInt(1);
 				String sname = s.getString(2);
@@ -29,7 +29,7 @@ public class Chap5_1 {
 			}
 			System.out.println();
 			
-			System.out.println("------Boats µ•¿Ã≈Õ------");
+			System.out.println("------Boats Îç∞Ïù¥ÌÑ∞------");
 			while(b.next()) {
 				int bid = b.getInt(1);
 				String bname = b.getString(2);
@@ -38,7 +38,7 @@ public class Chap5_1 {
 			}
 			System.out.println();
 			
-			System.out.println("------Reserves µ•¿Ã≈Õ------");
+			System.out.println("------Reserves Îç∞Ïù¥ÌÑ∞------");
 			while(r.next()) {
 				int sid = r.getInt(1);
 				int bid = r.getInt(2);
@@ -47,11 +47,11 @@ public class Chap5_1 {
 			}
 			System.out.println();
 			
-			System.out.println("µ•¿Ã≈Õ∫£¿ÃΩ∫ ø¨∞· ¡æ∑·");
+			System.out.println("Îç∞Ïù¥ÌÑ∞Î≤†Ïù¥Ïä§ Ïó∞Í≤∞ Ï¢ÖÎ£å");
 			conn.close();
 		}
 		catch(Exception e){
-			System.out.println("ø¿∑˘ : "+e);
+			System.out.println("Ïò§Î•ò : "+e);
 		}
 	}
 
