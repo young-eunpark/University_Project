@@ -12,10 +12,10 @@ public class Chap5_2 {
 		int i=0,j=0,k=0;
 		try {
 			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/report1","re1","Report1@");
-			System.out.println("µ¥ÀÌÅÍ º£ÀÌ½º ¿¬°á ¼º°ø");
+			System.out.println("ë°ì´í„° ë² ì´ìŠ¤ ì—°ê²° ì„±ê³µ");
 			System.out.println();
 			
-			//3¹ø
+			//3ë²ˆ
 			/*Statement stmt=conn.createStatement();
 			Statement stmt1=conn.createStatement();
 			Statement stmt2=conn.createStatement();
@@ -29,7 +29,7 @@ public class Chap5_2 {
 					+ "WHERE NOT EXISTS(SELECT B.bid FROM Boats B "
 					+ "WHERE NOT EXISTS(SELECT R.bid FROM Reserves R WHERE R.bid=B.bid AND R.sid=S.sid))");
 
-			System.out.println("------R.bid=103ÀÎ Saliors : sid, sname------");
+			System.out.println("------R.bid=103ì¸ Saliors : sid, sname------");
 			while(select.next()) {
 				int sid = select.getInt(1);
 				String sname = select.getString(2);
@@ -37,7 +37,7 @@ public class Chap5_2 {
 			}
 			System.out.println();
 
-			System.out.println("------ÀÌ¸§ÀÌ A·Î ½ÃÀÛÇÏ´Â »ç¶÷ÀÇ sid,sname,age------");
+			System.out.println("------ì´ë¦„ì´ Aë¡œ ì‹œì‘í•˜ëŠ” ì‚¬ëŒì˜ sid,sname,age------");
 			while(nameA.next()) {
 				int sid = nameA.getInt(1);
 				String sname = nameA.getString(2);
@@ -46,7 +46,7 @@ public class Chap5_2 {
 			}
 			System.out.println();
 
-			System.out.println("------¹è »ö±ò greenÀ» ¼±ÅÃÇÑ »ç¶÷ÀÇ sid,sname,rating------");
+			System.out.println("------ë°° ìƒ‰ê¹” greenì„ ì„ íƒí•œ ì‚¬ëŒì˜ sid,sname,rating------");
 			while(Bcolor.next()) {
 				int sid = Bcolor.getInt(1);
 				String sname = Bcolor.getString(2);
@@ -55,7 +55,7 @@ public class Chap5_2 {
 			}
 			System.out.println();
 
-			System.out.println("------¸ğµç ¹è¸¦ ¿¹¾àÇÑ ¹î»ç¶ûÀÇ sid,sname------");
+			System.out.println("------ëª¨ë“  ë°°ë¥¼ ì˜ˆì•½í•œ ë±ƒì‚¬ë‘ì˜ sid,sname------");
 			while(ReserveAll.next()) {
 				int sid = ReserveAll.getInt(1);
 				String sname = ReserveAll.getString(2);
@@ -63,7 +63,7 @@ public class Chap5_2 {
 			}
 			System.out.println();*/
 			
-			//4¹ø
+			//4ë²ˆ
 			pstmt=conn.prepareStatement("Insert into Boats(bid,bname,color) Values(?,?,?)");
 			pstmt.setInt(1, 105);
 			pstmt.setString(2, "Clipper");
@@ -87,8 +87,8 @@ public class Chap5_2 {
 			ResultSet b=stmt1.executeQuery("select * from Boats");
 			ResultSet r=stmt2.executeQuery("select * from Reserves");
 			
-			System.out.println("-----Insert,Delete,Update ÈÄ Ç¥½ÃµÇ´Â µ¥ÀÌÅÍ-----");
-			System.out.println("------Sailors µ¥ÀÌÅÍ------");
+			System.out.println("-----Insert,Delete,Update í›„ í‘œì‹œë˜ëŠ” ë°ì´í„°-----");
+			System.out.println("------Sailors ë°ì´í„°------");
 			while(s.next()) {
 				int sid = s.getInt(1);
 				String sname = s.getString(2);
@@ -98,7 +98,7 @@ public class Chap5_2 {
 			}
 			System.out.println();
 			
-			System.out.println("------Boats µ¥ÀÌÅÍ------");
+			System.out.println("------Boats ë°ì´í„°------");
 			while(b.next()) {
 				int bid = b.getInt(1);
 				String bname = b.getString(2);
@@ -107,7 +107,7 @@ public class Chap5_2 {
 			}
 			System.out.println();
 			
-			System.out.println("------Reserves µ¥ÀÌÅÍ------");
+			System.out.println("------Reserves ë°ì´í„°------");
 			while(r.next()) {
 				int sid = r.getInt(1);
 				int bid = r.getInt(2);
@@ -116,14 +116,14 @@ public class Chap5_2 {
 			}
 			System.out.println();
 			
-			conn.close();  //3¹ø, 4¹ø °øÅë
+			conn.close();  //3ë²ˆ, 4ë²ˆ ê³µí†µ
 			pstmt.close();
 			pstmt1.close();
 			pstmt2.close();
-			System.out.println("µ¥ÀÌÅÍº£ÀÌ½º ¿¬°á Á¾·á");
+			System.out.println("ë°ì´í„°ë² ì´ìŠ¤ ì—°ê²° ì¢…ë£Œ");
 		}
 		catch(Exception e){
-			System.out.println("¿À·ù : "+e);
+			System.out.println("ì˜¤ë¥˜ : "+e);
 		}
 	}
 }
